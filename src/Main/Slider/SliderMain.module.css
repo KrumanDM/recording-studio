@@ -1,0 +1,15 @@
+.sliderContainer{
+    width: 100%;
+    padding-top: 100px;
+}
+.sliderDescription{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Michroma", Sans-serif;
+  font-size:45px;
+  font-weight: 50;
+}
+.image{
+    width: 100%;
+}

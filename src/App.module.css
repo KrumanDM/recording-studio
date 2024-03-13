@@ -1,0 +1,76 @@
+body{
+  /* background-color: black; */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.appContainer{
+  
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #bdbcbc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(111, 111, 111);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.backToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: white;
+  border-color:  rgb(119, 107, 252);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.backToTopButton:hover {
+  opacity: 1;
+  background-color: rgb(119, 107, 252);
+  transition: 0.4s;
+}
+@media only screen and (max-width: 768px) {
+  .backToTopButton {
+    position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  border-color:  rgb(119, 107, 252);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+  }
+ 
+}
+.appContainer{
+  width: 100%;
+  height: 100%;
+}

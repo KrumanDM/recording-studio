@@ -1,0 +1,221 @@
+.mainContainer {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-color: black;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-left:120px;
+  color: white;
+  /* background-color: rgb(112, 155, 192); */
+  color: #FFF;
+  font-family: "Michroma", Sans-serif;
+  font-size:30px;
+  font-weight: 50;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /* animation: slide-in 1.3s ease-in-out; */
+}
+/* @keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+.adressLink{
+  text-decoration: none;
+  color: white;
+}
+.adressLink:hover{
+  color: rgb(204, 204, 204);
+}
+.description1{
+  font-size: 55px;
+}
+.description2{
+  display: flex;
+  gap: 10px;
+}
+.description1Mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.descriptionMobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  font-family: "Michroma", Sans-serif;
+  
+}
+.description1Mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #0f71ff; */
+}
+.description2Mobile{
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 80px;
+  gap: 10px;
+  font-size: 20px;
+}
+.miniDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  gap: 15px;
+  padding-right: 30px;
+}
+.miniDescription li {
+  text-decoration: underline;
+  text-decoration-color: #bfbfbf;
+}
+.uslugi{
+  color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Michroma", Sans-serif;
+  font-size:45px;
+  font-weight: 50;
+}
+.prices {
+  color: white;
+  /* background-color: rgb(247, 215, 174); */
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  flex-grow: 1;
+}
+.mainRadiusContainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.radiusContainer{
+  border-radius: 6px;
+  overflow: hidden;
+}
+.cardsContainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "Poppins";
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, rgb(167, 44, 188), rgb(243, 44, 147));
+  border-image-slice: 1;
+  gap: 12px;
+}
+.cardsContainer1:hover{
+  background-color: rgb(36, 27, 63);
+}
+.cardsContainer2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "Poppins";
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, rgb(59, 201, 249), rgb(86, 86, 197));
+  border-image-slice: 1;
+  gap: 12px;
+}
+.cardsContainer2:hover{
+  background-color: rgb(36, 27, 63);
+}
+.cardsContainer3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "Poppins";
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, rgb(151, 59, 249), rgb(45, 45, 206));
+  border-image-slice: 1;
+  gap: 12px;
+}
+.cardsContainer3:hover{
+  background-color: rgb(36, 27, 63);
+}
+
+.mainName {
+  font-size: xx-large;
+}
+.mainDescription{
+  font-size: medium;
+}
+.price {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: xx-large;
+}
+.buttonChoose {
+  display: grid;
+  place-items: center;
+  min-width: 200px;
+  padding: 14px 0;
+  border-radius: 6px;
+  border: 2px solid #0f71ff;
+  background: transparent;
+  color: #0f71ff;
+  font-size: inherit;
+  font-family: inherit;
+}
+.buttonChoose:hover {
+  background: #0f71ff;
+  color: #f7f7f7;
+}
+@media only screen and (max-width: 768px) {
+  .prices {
+    flex-direction: column;
+  }
+  .cardsContainer {
+    padding: 20px;
+  }
+  .mainRadiusContainer{
+    flex-direction: column;
+    
+  }
+  .cardsContainer{
+    
+  }
+
+  
+}
+.phoneCall {
+  fill: red;
+}

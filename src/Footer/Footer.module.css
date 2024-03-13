@@ -1,0 +1,114 @@
+.footerContainer {
+  background: black;
+  font-family: "Michroma", Sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size:  20px;
+    color: #000;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+}
+.some{
+  background-color: black;
+  height: 1px;
+  color: white;
+}
+.linksColumn{
+  display: flex;
+  flex-direction: column;
+  
+}
+@media (width > 400px) {
+  .linksColumn {
+    text-align: left;
+  }
+  section.top .links {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 50px;
+  }
+  section.top .socials {
+    left: 0;
+    translate: 0;
+  }
+  section.top > img {
+    margin: 0 0 50px;
+  }
+  section.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+  }
+}
+@media (width >= 640px) {
+  section {
+    margin: 0 auto;
+    max-width: 580px;
+    padding: 0;
+  }
+  section.top .links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section.top .socials {
+    position: static;
+  }
+  section.bottom {
+    justify-content: flex-start;
+  }
+  .socialsColumn:is(h2, p) {
+    display: block;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .faBrands_faInstagram {
+    display: flex;
+    gap: 7px;
+    padding-left: 3px;
+  }
+  .top{
+    
+    padding-left: 30px;
+  }
+  
+}
+
+.contactsContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+.bottom {
+  color: white;
+}
+.adressLink {
+  text-decoration: none;
+  color: white;
+}
+.adressLink:hover {
+  color: rgb(88, 88, 88);
+}
+.faBrands_faInstagram {
+  display: flex;
+  gap: 7px;
+}
+.logo{
+  padding-bottom: 10px;
+}
+.linksColumn_socialsColumn{
+  display: flex;
+  gap: 10px;
+  padding-top: 15px;
+  color: white;
+}
+.bottom{
+  border-top: 1px solid white;
+  margin-top: 30px;
+}
+.copyright{
+  font-size: 10px;
+}
