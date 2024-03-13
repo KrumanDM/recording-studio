@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import s from "./Main.module.css";
 import { SliderMain } from "./Slider/SliderMain";
 import check from "./greenIcon.svg";
@@ -7,9 +7,15 @@ import location4 from "./location4.png";
 import phoneLogo3 from "./phoneLogo3.png";
 import phoneCall from './phoneCall.svg';
 import locationSvg from './locationSvg.svg'
+import { Price1 } from "./Prices/Price1";
 
 export const Main = () => {
+  const [open, setOpen] = useState(false);
+
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
+  const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
 
   return (
     <div className={s.mainContainer}>
@@ -41,6 +47,8 @@ export const Main = () => {
       )}
       <SliderMain />
     
+      
+
       <div id="prices" className={s.prices}>
         <div className={s.uslugi}>Услуги</div>
         <div className={s.mainRadiusContainer}>
@@ -56,7 +64,8 @@ export const Main = () => {
               </ul>
             </h3>
             <div className={s.price}>200 руб</div>
-            <button className={s.buttonChoose}>Choose Plan</button>
+            <button className={s.buttonChoose} onClick={handleOpen}>Choose Plan</button>
+            {open ? <Price1 handleClose={handleClose}/> : null}
           </div>
         </div>
         <div className={s.radiusContainer}>

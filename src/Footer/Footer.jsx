@@ -54,10 +54,8 @@ export const Footer = () => {
           </div>
         </div>
       </section>
-      <section className={s.bottom}>
-        <p className={s.copyright}>© KrumanDM</p>
-        <div className={s.legal}>{/* legal links */}</div>
-      </section>
+      <div className={s.footerTrash}></div>
+     
     </div>
   );
 };

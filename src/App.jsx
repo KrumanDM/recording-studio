@@ -47,6 +47,7 @@ function App() {
 
   <Sidebar open={open} handleClose={handleClose}/>
   <Header handleOpen={handleOpen} open={open}/>
+  
   <Main/>
   <Footer/>
   {showButton && (
